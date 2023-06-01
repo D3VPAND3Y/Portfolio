@@ -1,6 +1,8 @@
-import { Fragment } from "react";
+// import { Fragment } from "react";
 import "./Home.scss"
-import TextSpan from "./TextSpan";
+import TextSpan from "../TextSpan";
+import Preloader from "../Preloader/Preloader";
+
 const Home = () => {
     const sentence = "Hi, I'm DEVPANDEY".split("");
     const sentence3 = " I love designing and coding".split("");
@@ -9,6 +11,7 @@ const Home = () => {
 
     return (
         <div>
+        <Preloader/>
         <div className="text-container">
         {sentence.map((letter, index) => {
             return <TextSpan  key={index}>{letter === " " ? "\u00A0" : letter}</TextSpan>;
@@ -24,6 +27,8 @@ const Home = () => {
             return <TextSpan  key={index}>{letter === " " ? "\u00A0" : letter}</TextSpan>;
         })}
         </div>
+
+
 
         </div>
     );

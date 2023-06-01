@@ -1,0 +1,104 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  padding: 0 50px;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  padding-top: 20px;
+  align-items: center;
+  z-index: 10;
+
+  @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Megrim&display=swap");
+
+  #logo {
+    position: fixed;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Megrim", cursive;
+    color: #39b877;
+
+
+    .dev {
+      font-size: 1rem;
+      font-weight: 50;
+      color: white !important;
+    }
+
+    .cls-1 {
+      fill: #08e7f3;
+    }
+  }
+
+  .ham-disabled {
+    pointer-events: none;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    mix-blend-mode: difference;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+
+    &:hover {
+      .hamburger-icon::before {
+        transform: rotate(0deg) translate(-5px, -4px);
+      }
+
+      .hamburger-icon::after {
+        transform: rotate(0deg) translate(5px, 4px);
+      }
+    }
+  }
+
+  .hamburger-icon {
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 30%;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 2px;
+      background: white;
+      transform: rotate(0deg) translate(0px, -4px);
+      transition: transform 0.25s ease-in-out;
+    }
+
+    &::after {
+      transform: rotate(0deg) translate(0px, 4px);
+    }
+  }
+
+  .hamburger__active {
+    @extend .hamburger;
+
+    &:hover {
+      .hamburger-icon::before {
+        transform: rotate(0deg) translate(0, 0);
+      }
+
+      .hamburger-icon::after {
+        transform: rotate(0deg) translate(0, 0);
+      }
+    }
+
+    .hamburger-icon {
+      @extend .hamburger-icon;
+
+      &::before {
+        transform: rotate(-45deg) translate(0px, 0px);
+      }
+
+      &::after {
+        transform: rotate(45deg) translate(0px, 0px);
+      }
+    }
+  }
+}

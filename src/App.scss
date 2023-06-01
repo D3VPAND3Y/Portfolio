@@ -1,0 +1,21 @@
+.cursor {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+
+}
+
+.cursor2 {
+  width: 10px;
+  height: 10px;
+  transition: 200ms ease-out;
+}
+.pages {
+  max-width: 1440px;
+  margin: auto;
+}

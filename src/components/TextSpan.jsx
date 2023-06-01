@@ -22,11 +22,6 @@ const TextSpan = ({children}) => {
         // transition : {
         //     times : [0,.4,.6,.6,1]
         // },
-        color : [
-            isHovered ? "#ff0000" : "#fff",
-            isHovered ? "#fff" : "#ff0000",
-
-        ],
 
 
         });
@@ -49,9 +44,6 @@ const TextSpan = ({children}) => {
                 () => {
                     setIsHovered(false);
                     // change the colour back to normal when not hovered
-                    controls.start({
-                        color : "#fff"
-                    })
 
                 }
             }
