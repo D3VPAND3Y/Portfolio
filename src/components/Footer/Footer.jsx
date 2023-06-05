@@ -1,0 +1,67 @@
+import { Link } from "react-router-dom";
+import "./Footer.scss";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+
+const Footer = () => {
+
+    // animation for footer
+    useEffect(() => {
+        gsap.from(".main-footer", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            delay: 1.2,
+            ease: "easeInOut",
+        });
+    }, []);
+
+
+  return (
+    <footer className="main-footer">
+      <hr />
+      <div className="footer-top">
+        <div className="message">Say Hello</div>
+        <div className="links">
+          <div className="link">
+            <p>
+              <a
+                data-text="wa.me/D3VPAND3Y"
+                href="https://wa.me/+918287581900"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                wa.me/D3VPAND3Y
+              </a>
+            </p>
+            <p>
+              <a
+                data-text="dev16pandey@gmail.com"
+                href="mailto:dev16pandey@gmail.com"
+              >
+                dev16pandey@gmail.com
+              </a>
+            </p>
+          </div>
+          <div className="link">
+
+            <p>
+              <Link data-text="Resume" to="/about">
+                Resume
+              </Link>
+            </p>
+
+            <p>
+              <Link data-text="Contact" to="/contact">
+                Contact
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="footer-bottom">© Dev Pandey </div>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -43,7 +43,6 @@ const TextSpan = ({children}) => {
             onHoverEnd={
                 () => {
                     setIsHovered(false);
-                    // change the colour back to normal when not hovered
 
                 }
             }

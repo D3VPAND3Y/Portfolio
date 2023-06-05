@@ -1,0 +1,44 @@
+.work-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: -webkit-fill-available; /* mobile viewport bug fix */
+    scroll-behavior: smooth;
+}
+.boxes{
+    width: 100vw;
+    display: grid;
+    // center the grid
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 0.2fr);
+    grid-column: 1 / 1;
+    padding: 20px;
+    grid-gap: 20px;
+    &::after {
+      content: '';
+      position: relative;
+      display: block;
+      flex-shrink: 0;
+      width: 240px;
+      height: 1px;
+    }
+
+
+
+    /* Hide the others cards */
+    > button:not(:first-child) {
+      visibility: visible; /* switch to 'visible' */
+    }
+
+    @media screen and (max-width: 1080px) {
+      grid-template-columns: repeat(2, 0.2fr);
+    }
+
+    @media screen and (max-width: 654px) {
+      grid-template-columns: repeat(1, 0.2fr);
+    //   width: 280px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+}

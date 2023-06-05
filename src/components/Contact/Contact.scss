@@ -1,0 +1,192 @@
+.services {
+    position: relative;
+    background: #8d61ec;
+    color: white;
+    z-index: 2;
+
+    &__top {
+        // min-height: 100vh;
+        // min-height: calc(var(--vh, 1vh) * 100);
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 60px 150px;
+        padding-bottom: 20px;
+
+      @media screen and (max-width: 800px) {
+        padding: 0px 40px;
+        // position: fixed;
+        top: 80px;
+        left: 0;
+
+      }
+
+
+      }
+
+      @media screen and (max-width: 560px) {
+        padding: 0px 40px;
+        padding-bottom: 20px;
+
+      }
+
+      }
+
+
+
+        .title {
+            font-size: 30px;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 800;
+            margin-bottom: 30px;
+            color: #8d61ec;
+
+            @media screen and (max-width: 800px) {
+                font-size: 26px;
+            }
+
+            @media screen and (max-width: 654px) {
+                font-size: 22px;
+
+            }
+        }
+
+        .sub {
+            display: block;
+            text-align: center;
+            line-height: 1.3;
+            font-size: 20px;
+            margin-bottom: 50px;
+
+            @media screen and (max-width: 1080px) {
+                font-size: 18px;
+            }
+
+            @media screen and (max-width: 800px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 654px) {
+                font-size: 12px;
+            }
+
+
+            br {
+                @media screen and (max-width: 800px) {
+                    display: none;
+                }
+            }
+        }
+
+        form {
+            width: 70%;
+            min-width: 450px;
+
+            @media screen and (max-width: 560px) {
+                width: 100%;
+                min-width: 0;
+            }
+
+            }
+
+            .input-row {
+                display: flex;
+                justify-content: space-between;
+
+                @media screen and (max-width: 560px){
+                    flex-direction: column;
+
+                }
+                .side {
+                    width: 45%;
+
+                    @media screen and (max-width: 560px) {
+                        width: 100%;
+                        margin-bottom: 50px;
+
+                    }
+                }
+            }
+
+            input,
+            textarea {
+                border: 0;
+                border-radius: 0;
+                box-sizing: border-box;
+                border-bottom: 1px solid white;
+                background: transparent;
+                outline: none;
+                box-shadow: none;
+                text-align: left;
+                font-size: 14.5px;
+                width: 100%;
+                color: white;
+                padding: 0.6em;
+                padding-left: 0;
+
+
+
+                @media screen and (max-width: 1040px) {
+                    font-size: 14px;
+                }
+                @media screen and (max-width: 560px) {
+                    font-size: 12px;
+                }
+
+            }
+
+            // input:-webkit-autofill,
+            // input:-webkit-autofill:hover,
+            // input:-webkit-autofill:focus,
+            // input:-webkit-autofill:active {
+            //     box-shadow: 0 0 0 30px #8d61ec inset !important;
+            //     -webkit-box-shadow: 0 0 0 30px #8d61ec inset !important;
+            //     -webkit-text-fill-color: white !important;
+            // }
+
+            .textarea {
+                margin-top: 90px;
+
+                @media screen and (max-width: 560px) {
+                    margin-top: 0;
+
+                }
+
+                textarea {
+                    resize: none;
+                    line-height: 1.4;
+                }
+            }
+
+            label {
+                margin-top: 20px;
+                display: block;
+                text-transform: capitalize;
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+
+            .btn {
+                padding: 10px 30px;
+                background: transparent;
+                border: 1px solid #8d61ec;
+                display: block;
+                margin: 0 auto;
+                margin-top: 80px;
+                position: relative;
+                color: #8d61ec;
+
+                &:hover {
+                    background: #8d61ec;
+                    color: white;
+                    transition: all 0.3s ease-in-out;
+
+                }
+
+                @media screen and (max-width: 560px) {
+                    margin-top: 50px;
+                }
+
+
+            }

@@ -1,8 +1,11 @@
 // import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./navigation.styles.scss";
 
 const Navigation = () => {
+
+
+
   return (
     <div className="hamburger-menu">
       <div className="nav-primary">
@@ -10,19 +13,24 @@ const Navigation = () => {
           <div className="nav-title">Menu</div>
           <div className="nav-links">
             <div data-text="Home" className="nav-link">
-              <Link exact activeClassName="active-link" to="/">
+              <NavLink exact activeClassName="active-link" to="/">
                 Home
-              </Link>
+              </NavLink>
             </div>
             <div data-text="About Me" className="nav-link">
-              <Link activeClassName="active-link" to="/about">
+              <NavLink activeClassName="active-link" to="/about">
                 About me
-              </Link>
+              </NavLink>
+            </div>
+            <div data-text="Projects" className="nav-link">
+              <NavLink activeClassName="active-link" to="/work">
+                Projects
+              </NavLink>
             </div>
             <div data-text="Contact" className="nav-link">
-              <Link activeClassName="active-link" to="/contact">
+              <NavLink activeClassName="active-link" to="/contact">
                 Contact
-              </Link>
+              </NavLink>
             </div>
 
             <div data-text="GitHub" className="nav-link">

@@ -9,7 +9,7 @@ const Stars = () => {
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        await console.log(container);
+         console.log(container);
     }, []);
 
     return (
@@ -56,8 +56,8 @@ const Stars = () => {
           detectsOn: "window",
           events: {
             onClick: {
-              enable: false,
-              mode: []
+              enable: true,
+              mode: "repulse"
             },
             onDiv: {
               selectors: [],

@@ -1,30 +1,37 @@
 import  { useState, useEffect, Fragment } from "react";
 import { Link } from "react-router-dom";
-import { openMenu, closeMenu } from "../animations";
+import { openMenu, closeMenu } from "../../animations";
 import "./Header.scss";
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [disabled, setDisabled] = useState(false);
-  useEffect(() => {
-    if (menuOpen) {
+  const [disabled] = useState(false);
+
+
+
+  const menuToggle = () => {
+    if (!menuOpen) {
+      setMenuOpen(true);
       openMenu();
+      console.log("open");
     } else {
+      setMenuOpen(false);
       closeMenu();
+      console.log("close");
     }
-
-  }, [menuOpen]);
-
-
-
- const menuToggle = () => {
-    setDisabled(true);
-
-    setTimeout(() => {
-      setDisabled(false);
-    }, 1500);
-    setMenuOpen(!menuOpen);
   };
+
+  //close menu when a Navlink is clicked
+  useEffect(() => {
+    const links = document.querySelectorAll(".nav-link");
+    links.forEach((link) => {
+      link.addEventListener("click", () => {
+        setMenuOpen(false);
+        closeMenu();
+      });
+    });
+  }, []);
 
   return (
     <Fragment>

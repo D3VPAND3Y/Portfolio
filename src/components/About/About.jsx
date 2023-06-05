@@ -7,26 +7,47 @@ import "./About.scss";
 const transition = { duration: 1, ease: "easeInOut", delay: 0.8 };
 
 const About = () => {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-    });
-    document.title = "Dev — About Me";
-    gsap.from(".about__inner", {
-      duration: 0.2,
-      delay: 1,
-      opacity: 0,
-      ease: "Power4.out",
-    });
-    gsap.to(".cursor", {
-      duration: 0,
-      css: { display: "none" },
-    });
-  }, []);
+
+    // when the link is clicked, the page will scroll to the top
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    // animation for the about page
+    useEffect(() => {
+        gsap.from(".about__inner__left__title h2", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            delay: 1.2,
+            ease: "easeInOut",
+        });
+        gsap.from(".about__inner__left__content p", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            delay: 1.4,
+            ease: "easeInOut",
+        });
+        gsap.from(".about__inner__left__content__buttons", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            delay: 1.6,
+            ease: "easeInOut",
+        });
+        gsap.from(".about__inner__right__img", {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            delay: 1.8,
+            ease: "easeInOut",
+        });
+    }, []);
+
   return (
     <>
-    
+
         <motion.div
             className="about__inner"
             initial={{ opacity: 0 }}
@@ -60,7 +81,7 @@ const About = () => {
             </div>
             <div className="about__inner__right">
                 <div className="about__inner__right__img">
-                    <img src="assets/img/about.jpg" alt="" />
+                    {/* <img src="assets/img/about.jpg" alt="" /> */}
                 </div>
             </div>
         </motion.div>

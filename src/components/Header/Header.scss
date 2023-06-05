@@ -1,14 +1,24 @@
 .header {
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  align-items: center;
+  position: fixed;
   padding: 0 50px;
-  left: 10px;
-  right: 10px;
-  top: 10px;
-  padding-top: 20px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  // padding-top: 20px;
   align-items: center;
   z-index: 10;
+  height: 100px;
+  backdrop-filter: blur(10px);
+  // background: rgba(11, 11, 15, 0.8);
+//responsive
+  @media screen and (max-width: 800px) {
+    padding: 0 20px;
+  }
+
+
 
   @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Megrim&display=swap");
 
@@ -22,12 +32,17 @@
     .dev {
       font-size: 1rem;
       font-weight: 50;
-      color: white !important;
+      color: white;
     }
 
-    .cls-1 {
-      fill: #08e7f3;
+    //responsive
+    @media screen and (max-width: 800px) {
+
+      // position: static;
+      font-size: 2rem;
+      top: 30px;
     }
+
   }
 
   .ham-disabled {
@@ -37,6 +52,7 @@
   .hamburger {
     cursor: pointer;
     mix-blend-mode: difference;
+    backdrop-filter: blur(10px);
     width: 60px;
     height: 60px;
     position: fixed;
