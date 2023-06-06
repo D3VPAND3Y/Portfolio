@@ -55,6 +55,38 @@ body{
 
 }
 
+.links {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #868F97;
+    text-align: center;
+
+    .item {
+      color: #8d61ec;
+      position: relative;
+
+      a{
+        color: #868F97;
+        cursor: pointer;
+
+        &:hover {
+          color: #8d61ec;
+        }
+
+      }
+
+
+    }
+
+    span {
+      margin-left: 10px;
+    }
+  }
+
+
+
+
 .find-me {
     padding: 90px 60px;
     // background: #131419;
@@ -75,7 +107,7 @@ body{
     .topic {
       font-size: 17px;
       color: #858383;
-      font-weight: 700;
+      font-weight: 400;
       margin-bottom: 100px;
     }
 
@@ -96,7 +128,9 @@ body{
 
     .social-boxes {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      justify-content: center;
+      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       grid-column-gap: 45px;
       grid-row-gap: 50px;
 
@@ -186,25 +220,22 @@ body{
   }
 
   .contact {
-    padding: 120px 60px;
+    padding: 20px 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
     @media screen and (max-width: 800px) {
-        padding: 120px 40px;
+        padding: 20px 40px;
     }
 
     @media screen and (max-width: 654px) {
-        padding: 120px 20px;
+        padding: 20px 20px;
 
     }
 
-    @media screen and (max-width: 425px) {
-        padding: 120px 10px;
 
-    }
 
 
 
@@ -219,8 +250,13 @@ body{
 
       @media screen and (max-width: 800px) {
         font-size: 13px;
+        margin-bottom: 30px;
       }
 
+        @media screen and (max-width: 654px) {
+            font-size: 12px;
+
+        }
 
     }
 

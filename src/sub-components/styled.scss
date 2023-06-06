@@ -1,0 +1,116 @@
+.about-section{
+  padding: 90px 60px 0px;
+
+  @media screen and (max-width: 800px) {
+    padding: 90px 40px 0px;
+  }
+
+  @media screen and (max-width: 654px) {
+    padding: 90px 20px 0px;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 90px 10px 0px;
+  }
+
+}
+
+.about-section__container{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: 2fr 1fr;
+    }
+    @media screen and (max-width: 800px) {
+      // grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+
+    }
+
+}
+.about-section__container__text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    padding: 0px 20px;
+
+    @media screen and (max-width: 800px) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding: 0px;
+    }
+}
+
+.about-section__container__text__description{
+    // font-family: "Manrope", sans-serif;
+    color: #858383;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    @media screen and (max-width: 1080px) {
+      font-size: 22px;
+      line-height: 1.5;
+      // letter-spacing: normal;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+
+    @media screen and (max-width: 654px) {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 17px;
+    }
+
+
+}
+
+.about-section__container__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+
+    @media screen and (max-width: 1080px) {
+      height: 600px;
+    }
+
+    @media screen and (max-width: 800px) {
+      height: 500px;
+    }
+
+    @media screen and (max-width: 654px) {
+      height: 400px;
+    }
+
+    @media screen and (max-width: 500px) {
+      height: 350px;
+    }
+
+}
+
+.about-section__container__text__title{
+
+  font-family: "Manrope", sans-serif;
+  color: #8d61ec;
+  font-size: 55px;
+  font-weight: 800;
+  position: relative;
+
+  span {
+    font-size: 45px;
+  }
+
+  @media screen and (max-width: 800px) {
+    font-size: 45px;
+  }
+}

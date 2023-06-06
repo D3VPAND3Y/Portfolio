@@ -1,6 +1,5 @@
 .main-footer {
     padding: 50px 100px;
-    // background: #868F97;
     padding-bottom: 50px;
     width: 100vw;
     position: relative;
@@ -98,18 +97,6 @@
                         margin-bottom: 30px;
                     }
 
-                    // @include media("<=950px") {
-                    //     margin-right: 10em;
-                    // }
-
-                    // @include media("<=tablet") {
-                    //     margin-right: 7em;
-                    // }
-
-                    // @include media("<=phone") {
-                    //     margin-right: 0;
-                    //     margin-bottom: 30px;
-                    // }
                 }
             }
         }
@@ -136,21 +123,5 @@
             padding: 100px 0;
             padding-bottom: 40px;
         }
-
-        // @include media("<=820px") {
-        //     font-size: 14px;
-        // }
-
-        // @include media("<=tablet") {
-        //     font-size: 12px;
-        //     padding: 60px 0;
-        // }
-
-        // @include media("<=570px") {
-        //     text-align: left;
-        //     font-size: 14px;
-        //     padding: 100px 0;
-        //     padding-bottom: 40px;
-        // }
 
     }

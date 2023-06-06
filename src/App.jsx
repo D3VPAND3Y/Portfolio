@@ -9,6 +9,7 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Work from "./components/Work/Project";
+import Preloader from "./components/Preloader/Preloader";
 
 // import React,{useEffect} from "react";
 
@@ -19,6 +20,7 @@ const App = () => {
 
   return (
     <>
+    {/* <Preloader /> */}
       <Header />
       <Navigation />
       <div className="pages">

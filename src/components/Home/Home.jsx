@@ -4,10 +4,11 @@ import TextSpan from "../TextSpan";
 import { useEffect } from "react";
 import gsap from "gsap";
 import Preloader from "../Preloader/Preloader";
+import Dev1 from "../../assets/Dev-BlacknWhite.png";
+import AboutMeSection from "../../sub-components/AboutSection";
+
 import { Link } from "react-router-dom";
-// import Work from "../Work/Project";
-// import ProjectSection from "../../sub-components/ProjectSection";
-// import AboutSection from "../../sub-components/AboutSection";
+
 
 const Home = () => {
 
@@ -37,7 +38,8 @@ const Home = () => {
     return (
         <div>
         {/* <Preloader/> */}
-
+        <section className="hero-section">
+        <div className="title">
         <div className="text-container">
         {sentence.map((letter, index) => {
             return <TextSpan  key={index}>{letter === " " ? "\u00A0" : letter}</TextSpan>;
@@ -53,9 +55,17 @@ const Home = () => {
             return <TextSpan  key={index}>{letter === " " ? "\u00A0" : letter}</TextSpan>;
         })}
         </div>
-        {/* <AboutSection/> */}
-        {/* <Work/> */}
-        {/* <ProjectSection/> */}
+        </div>
+        {/* <div className="image-container">
+        <img className="image" src={Dev1} alt="Dev-Pandey" border="0" />
+        </div> */}
+        </section>
+        <div className="links">
+            <span className="item"><a href="about">About Me</a></span>
+            <span className="item">—</span>
+            <span className="item"><a href="work">My Projects</a></span>
+          </div>
+        <AboutMeSection/>
         <section className="find-me">
           <div className="title">
             Find <br /> Me{" "}
