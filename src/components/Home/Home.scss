@@ -176,9 +176,12 @@ body{
 
         &:hover {
           &::after {
-            top: 14px;
-            left: -12px;
-            border: none;
+            // top: 14px;
+            // left: -12px;
+            border: 1px solid #8d61ec;
+            border-right: none;
+            border-top: none;
+
           }
         }
 

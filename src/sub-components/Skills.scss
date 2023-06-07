@@ -1,0 +1,120 @@
+.tagcloud--item{
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        color: #8d61ec;
+    }
+}
+
+.tagcloud{
+    z-index: 1;
+}
+.a {
+    // height: 100vh;
+    width: 100vw;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    padding: 100px 40px;
+
+    // @media screen and (max-width: 900px) {
+    //     align-items: flex-start;
+    // }
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column-reverse;
+        padding: 50px 40px;
+        padding-top: 0px;
+        // text-align: center;
+  }
+
+}
+
+  .a-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+
+    @media screen and (max-width: 780px) {
+        width: 100%;
+        height: 50%;
+    }
+  }
+
+  .a-right {
+    flex: 1;
+    padding: 30px;
+    padding-left: 50px;
+    padding-top: 50px;
+
+    @media screen and (max-width: 1080px) {
+        // padding: 0px;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+        padding: 0px;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+
+  }
+
+  .a-card {
+    // width: 60%;
+    // height: 70vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .a-img {
+    // width: 100%;
+    height: 550px;
+    object-fit: cover;
+
+    @media screen and (max-width: 1080px) {
+        height: 500px;
+    }
+
+    @media screen and (max-width: 800px) {
+        height: 450px;
+    }
+
+    @media screen and (max-width: 500px) {
+        height: 350px;
+    }
+
+    @media screen and (max-width: 400px) {
+        height: 300px;
+        
+    }
+  }
+
+
+  .a-title {
+    font-family: "Manrope", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: #8d61ec;
+
+    @media screen and (max-width: 800px) {
+        font-size: 30px;
+    }
+  }
+
+  .a-sub {
+    margin: 20px 0px;
+  }
+
+  .a-desc{
+      font-weight: 300;
+  }
+

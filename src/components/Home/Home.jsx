@@ -37,7 +37,7 @@ const Home = () => {
 
     return (
         <div>
-        {/* <Preloader/> */}
+        <Preloader/>
         <section className="hero-section">
         <div className="title">
         <div className="text-container">
