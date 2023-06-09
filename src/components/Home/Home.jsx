@@ -4,7 +4,6 @@ import TextSpan from "../TextSpan";
 import { useEffect } from "react";
 import gsap from "gsap";
 import Preloader from "../Preloader/Preloader";
-import Dev1 from "../../assets/Dev-BlacknWhite.png";
 import AboutMeSection from "../../sub-components/AboutSection";
 
 import { Link } from "react-router-dom";

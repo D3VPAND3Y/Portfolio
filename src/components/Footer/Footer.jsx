@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import "./Footer.scss";
 import { useEffect } from "react";
 import { gsap } from "gsap";
+import {FaGithub, FaLinkedin, FaInstagram, FaBehance} from "react-icons/fa";
 
 const Footer = () => {
 
@@ -42,20 +42,44 @@ const Footer = () => {
                 dev16pandey@gmail.com
               </a>
             </p>
+          {/* </div>
+          <div className="link"> */}
+          <div className="logo">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+
+              <FaGithub size={30}
+               />
+            </a>
+
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin size={30}/>
+            </a>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaBehance size={30} />
+            </a>
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram size={30}/>
+            </a>
+
+
+
           </div>
-          <div className="link">
-
-            <p>
-              <Link data-text="Resume" to="/about">
-                Resume
-              </Link>
-            </p>
-
-            <p>
-              <Link data-text="Contact" to="/contact">
-                Contact
-              </Link>
-            </p>
           </div>
         </div>
       </div>

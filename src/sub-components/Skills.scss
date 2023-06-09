@@ -1,18 +1,4 @@
-.tagcloud--item{
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    &:hover{
-        color: #8d61ec;
-    }
-}
 
-.tagcloud{
-    z-index: 1;
-}
 .a {
     // height: 100vh;
     width: 100vw;
@@ -62,7 +48,7 @@
 
     @media screen and (max-width: 800px) {
         padding: 0px;
-        padding-bottom: 30px;
+        padding-bottom: 60px;
         width: 100%;
     }
 
@@ -94,7 +80,7 @@
 
     @media screen and (max-width: 400px) {
         height: 300px;
-        
+
     }
   }
 
@@ -116,5 +102,40 @@
 
   .a-desc{
       font-weight: 300;
+      margin-bottom: 20px;
   }
 
+
+  .skills-title{
+    margin-top: 20px;
+  }
+
+  .company{
+    li{
+      list-style-type: square;
+    }
+  }
+  .skills-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    // @media screen and (max-width: 500px) {
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
+
+    @media screen and (max-width: 400px) {
+        grid-template-columns: repeat(2, 1fr);
+        // justify-items: center;
+    }
+
+  }

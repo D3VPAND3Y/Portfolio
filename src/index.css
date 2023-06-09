@@ -9,10 +9,12 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+  cursor: none;
 
 }
 a{
   text-decoration: none;
   color: inherit;
 }
+
 

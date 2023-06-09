@@ -33,42 +33,44 @@ const Skills = () => {
               minim veniam, quis nostrud exercitation ullamco laboris nisi ut
               aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
             </p>
+            <div className="Skills">
+              <div className="skills-title">
+                <h1 className="a-title">Skills.</h1>
+              </div>
+              <div className="skills-list">
+                <div className="company">
+                  <ul className="tasks">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>BootStrap</li>
+                    <li>React JS</li>
+                  </ul>
+                </div>
+                <div className="company">
+                  <ul className="tasks">
+                    <li>Canva</li>
+                    <li>Figma</li>
+                    <li>Illustrator</li>
+                    <li>UI/UX</li>
+                  </ul>
+                </div>
+                <div className="company">
+                  <ul className="tasks">
+                    <li>FireBase</li>
+                    <li>Git</li>
+                    <li>Github</li>
+                    <li>Node JS</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
           </div>
         </div>
-                {/* <div className="tag-cloud-div">
-                <TagCloud
-        className="tag-cloud"
-        // should not move according to the mouse
-        disableRandomColor={true}
-        options={() => ({
-            radius: 300,
-            maxSpeed: "fast",
-            // should not follow the mouse
-            freeDirection: false,
-            shuffleTags: true,
-            // shape: "sphere",
-            shape: "spiral",
 
-        })}
-        onClickOptions={{ passive: true }}
-    >
-        {[
-            "VSCode",
-            "TypeScript",
-            "React",
-            "Preact",
-            "Parcel",
-            "Jest",
-            "Next",
-            "ESLint",
-            "Framer Motion",
-            "Three.js",
-        ]}
-    </TagCloud>
-
-
-
-                        </div> */}
             </>
         );
     }

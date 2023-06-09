@@ -135,17 +135,11 @@
                 }
 
             }
-
-            // input:-webkit-autofill,
-            // input:-webkit-autofill:hover,
-            // input:-webkit-autofill:focus,
-            // input:-webkit-autofill:active {
-            //     box-shadow: 0 0 0 30px #8d61ec inset !important;
-            //     -webkit-box-shadow: 0 0 0 30px #8d61ec inset !important;
-            //     -webkit-text-fill-color: white !important;
-            // }
-
             .textarea {
+
+                #message {
+                    height: 39px;
+                }
                 margin-top: 90px;
 
                 @media screen and (max-width: 560px) {

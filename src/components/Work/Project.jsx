@@ -1,38 +1,26 @@
-import "./Project.scss";
-// import { boxHover, boxExit } from "../../animations";
+import "./Project.scss"
+import { products } from "./DataFile";
 import Card from "./Card";
-import { useEffect } from "react";
-import gsap from "gsap";
-import  websites  from "./DataFile";
-const Work = () => {
 
-  // animation for the boxes on the work page
-  useEffect(() => {
-    gsap.from(".boxes", {
-      y: 100,
-      opacity: 0,
-      duration: 1,
-      delay: 1.2,
-      ease: "easeInOut",
-    });
-  }, []);
-
+const ProductList = () => {
   return (
-    <div className="work-section">
-      <div className="boxes">
-        {websites.map((website, index) => (
-          <Card className="box"
-            key={index}
-            hexa={website.hexa}
-            title={website.title}
-            description={website.description}
-            image={website.image}
-          />
+    <div className="pl">
+      <div className="pl-texts">
+        <h1 className="pl-title">Create & inspire. It's Dev</h1>
+        <p className="pl-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          necessitatibus quasi, quos, voluptate voluptatem fugiat, quod
+          voluptatibus voluptates consequatur quibusdam doloribus. Quisquam
+        </p>
+      </div>
+      <div className="pl-list">
+        {products.map((item) => (
+          <Card key={item.id} img={item.img} link={item.link} />
         ))}
-
       </div>
     </div>
   );
 };
 
-export default Work;
+export default ProductList;
+

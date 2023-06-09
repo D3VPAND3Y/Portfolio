@@ -41,6 +41,10 @@ const Contact = () => {
                 setLoading(false);
                 setButtonMessage("Message Sent!");
                 setFormState(initialForm);
+                setTimeout(() => {
+                    setButtonMessage("Send Message.");
+                }, 2000);
+
             } catch (err) {
                 console.log(err);
                 setLoading(false);
@@ -92,7 +96,7 @@ const Contact = () => {
                 <textarea
                   name="message"
                   id="message"
-                  placeholder="Hello, I think we need you to work on/collaborate this particular product... Reach out as soon as you can."
+                  placeholder="Write Your Message Here. "
                   required
                   value={message}
                   onChange={onChange}
