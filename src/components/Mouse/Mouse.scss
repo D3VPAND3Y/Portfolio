@@ -11,10 +11,10 @@
     mix-blend-mode: exclusion;
     animation: cursorName 500ms infinite alternate;
 
-    @media screen and (max-width: 800px) {
-        width: 30px;
-        height: 30px;
+    @media screen and (max-width: 768px) {
+        display: none;
     }
+
 
 
 }
@@ -23,5 +23,7 @@
     width: 10px;
     height: 10px;
     transition: 200ms ease-out;
-
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }

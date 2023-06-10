@@ -3,10 +3,14 @@ import { useEffect } from "react"
 import "./preloader.styles.scss"
 import { preLoaderAnim } from "../../animations"
 
+
 const Preloader = () => {
-    useEffect(() => {
-        preLoaderAnim()
-    }, [])
+
+  useEffect(() => {
+    preLoaderAnim();
+  }, [])
+
+
 
   return (
     <div className="preloader">

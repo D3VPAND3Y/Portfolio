@@ -1,22 +1,20 @@
 // import { Fragment } from "react";
 import "./Home.scss"
 import TextSpan from "../TextSpan";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 import gsap from "gsap";
 import Preloader from "../Preloader/Preloader";
 import AboutMeSection from "../../sub-components/AboutSection";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const Home = () => {
 
-    // when the link is clicked, the page will scroll to the top
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
-    // animation for the home page for the text different text spans
     useEffect(() => {
         gsap.from(".text-container", {
             y: 100,
@@ -32,11 +30,9 @@ const Home = () => {
     const sentence = "Hii, I'm Dev Pandey".split("");
     const sentence2 = "Crafting Code with <Vision> ".split("");
     const sentence3 = "Shaping Web with <Precision>".split("");
-    const sentence4 = "Find Me 🔎".split("");
-
     return (
         <div>
-        <Preloader/>
+        <Preloader />
         <section className="hero-section">
         <div className="sub">Full-Stack Developer</div>
         <div className="title">
@@ -61,9 +57,16 @@ const Home = () => {
         </div> */}
         </section>
         <div className="links">
-            <span className="item"><a href="about">About Me</a></span>
+            <span className="item">
+            <NavLink to="/about">
+            About Me
+            </NavLink>
+            </span>
             <span className="item">—</span>
-            <span className="item"><a href="work">My Projects</a></span>
+            <span className="item"><NavLink to="/work">
+            My Projects
+            </NavLink>
+            </span>
           </div>
         <AboutMeSection/>
         <section className="find-me">
