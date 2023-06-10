@@ -1,7 +1,22 @@
 import { useState } from "react";
 import "./Contact.scss";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+
 
 const Contact = () => {
+
+  // animation for contact
+  useEffect(() => {
+    gsap.from(".services__inner", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      delay: 1.2,
+      ease: "easeInOut",
+    });
+  }, []);
+
     const initialForm ={
         name:"",
         email:"",
@@ -60,8 +75,8 @@ const Contact = () => {
           <div className="services__top">
             <div className="title">Get In Touch!</div>
             <div className="sub">
-              Got a question, proposal or project or want to work <br />{" "}
-              together on something? Feel free to reach out.
+            Got a question, proposal, or an exciting project in mind?<br />{" "}
+            Don't hesitate to drop me a line, and let's explore the endless possibilities that await us.
             </div>
             <form onSubmit={onSubmit}>
               <div className="input-row">

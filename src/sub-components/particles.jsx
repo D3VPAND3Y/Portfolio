@@ -124,10 +124,10 @@ const Stars = () => {
               }
             },
             push: {
-              quantity: 4
+              quantity: 1
             },
             remove: {
-              quantity: 2
+              quantity: 1
             },
             repulse: {
               distance: 200,

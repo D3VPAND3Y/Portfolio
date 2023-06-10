@@ -16,24 +16,12 @@
     hr {
         border-color: #868F97;
         border-width: 1px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         opacity: 0.4;
     }
 
     .footer-top {
         // display: flex;
-        font-size: 15px;
-
-
-        @media screen and (max-width: 800px) {
-            font-size: 14px;
-        }
-
-        @media screen and (max-width: 560px) {
-            font-size: 12px;
-
-        }
-
         font-weight: 500;
 
         .message {
@@ -54,6 +42,8 @@
 
             }
             .link {
+                display: flex;
+                flex-direction: column;
 
 
                 p {
@@ -69,6 +59,12 @@
                 a {
                     position: relative;
                     font-size: 18px;
+
+                    @media screen and (max-width: 500px) {
+                        font-size: 16px;
+
+
+                    }
 
 
 
@@ -124,21 +120,22 @@
         justify-content: center;
         align-items: center;
         // padding: 40px 0;
-        // padding-bottom: 40px;
+        padding-bottom: 20px;
         text-align: right;
-        font-size: 16px;
+        font-size: 20px;
 
         @media screen and (max-width: 800px) {
-            font-size: 14px;
+            font-size: 18px;
         }
 
 
         @media screen and (max-width: 570px) {
             text-align: left;
-            font-size: 14px;
+            font-size: 16px;
             // padding: 100px 0;
             padding-top: 0px;
             padding-bottom: 10px;
         }
 
     }
+

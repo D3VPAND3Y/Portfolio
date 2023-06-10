@@ -7,7 +7,7 @@ const AboutSection = () => {
 
     <div className="about-section">
     <h1 className="about-section__container__text__title">
-    About<br /> Me{" "}
+    Me, Myself<br /> & I {" "}
             <span role="img" aria-label="find-emoji">
             👨‍💻
             </span></h1>
@@ -15,7 +15,10 @@ const AboutSection = () => {
     <div className="about-section__container__text">
 
     <p className="about-section__container__text__description">
-    I am a Full Stack Developer with a passion for creating beautiful and functional user experiences. I have a strong background in web development and design, and I am always looking to expand my knowledge and stay up to date with the latest technologies. I am a quick learner and a team player who is always ready to take on new challenges.
+    Hii I'm Dev, passionate is the word that describes me the best. I define myself by the work I want to do. Skills can be taught, personality is inherent. I prefer to keep learning, continue challenging myself, and do interesting things that matter.
+    </p>
+    <p className="about-section__container__text__description">
+      My abundant energy fuels me in the pursuit of many interests, hobbies, areas of study and artistic endeavors. I'm a fast learner, able to pick up new skills and juggle different projects and roles with relative ease.
     </p>
     </div>
     {/* <div className="about-section__container__image"> */}

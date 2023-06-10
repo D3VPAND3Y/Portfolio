@@ -11,9 +11,9 @@ const Preloader = () => {
   return (
     <div className="preloader">
         <div className="texts-container">
-        <span>Developer, </span>
-        <span> Designer, </span>
-        <span>Vibe</span>
+        <span>Learn.</span>
+        <span>Build.</span>
+        <span>Craft.</span>
 
         </div>
     </div>

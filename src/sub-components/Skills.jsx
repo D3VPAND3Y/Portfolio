@@ -8,6 +8,8 @@ import { TagCloud } from "@frank-mayer/react-tag-cloud";
 import Dev1 from "../assets/Dev-1.jpeg";
 
 const Skills = () => {
+
+  const sentence = "About Me".split("");
         return(
           <>
           <div className="a">
@@ -22,16 +24,15 @@ const Skills = () => {
             </div>
           </div>
           <div className="a-right">
-            <h1 className="a-title">About Me</h1>
+            <h1 className="a-title">
+            About Me
+            </h1>
             <p className="a-sub">
-              It is a long established fact that a reader will be distracted by the
-              readable content.
+            Hello, I'm Dev Pandey, an undergraduate student currently pursuing my B.Tech degree at the prestigious Netaji Subhas University of Technology. I am a full stack web developer with a strong passion for creating exceptional user experiences.
             </p>
             <p className="a-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
+            I am also skilled in UI/UX design. By combining my technical knowledge with my creative mindset, I strive to produce the best possible designs.
+            Apart from this, I am also a competitive programmer and have a knack for problem solving which helps me come up with creative solutions to problems.
             </p>
             <div className="Skills">
               <div className="skills-title">

@@ -46,7 +46,7 @@ const Footer = () => {
           <div className="link"> */}
           <div className="logo">
             <a
-              href=""
+              href="https://github.com/D3VPAND3Y"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -56,21 +56,21 @@ const Footer = () => {
             </a>
 
             <a
-              href=""
+              href="https://www.linkedin.com/in/dev-pandey-b1862422a/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaLinkedin size={30}/>
             </a>
             <a
-              href=""
+              href="https://www.behance.net/d3vpand3y"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaBehance size={30} />
             </a>
             <a
-              href=""
+              href="https://www.instagram.com/d3v_pand3y/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -89,3 +89,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

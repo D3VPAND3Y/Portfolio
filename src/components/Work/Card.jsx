@@ -1,5 +1,7 @@
 import "./Card.scss";
 const Card = ({img,link}) => {
+
+  //animation for project
   return (
     <div className="p">
       <div className="p-browser">

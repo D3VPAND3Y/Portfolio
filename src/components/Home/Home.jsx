@@ -29,15 +29,16 @@ const Home = () => {
 
 
 
-    const sentence = "Hi, I'm DEVPANDEY".split("");
-    const sentence3 = " I love designing and coding".split("");
-
-    const sentence2 = "I'm a Full Stack Developer".split("");
+    const sentence = "Hii, I'm Dev Pandey".split("");
+    const sentence2 = "Crafting Code with <Vision> ".split("");
+    const sentence3 = "Shaping Web with <Precision>".split("");
+    const sentence4 = "Find Me 🔎".split("");
 
     return (
         <div>
         <Preloader/>
         <section className="hero-section">
+        <div className="sub">Full-Stack Developer</div>
         <div className="title">
         <div className="text-container">
         {sentence.map((letter, index) => {
@@ -73,7 +74,7 @@ const Home = () => {
             </span>
           </div>
           <div className="topic">
-            I'm currently looking for new opportunities, my inbox is always open.
+          Got any questions? Feel free to reach out.
           </div>
 
           <div className="social-boxes">
