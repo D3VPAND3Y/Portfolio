@@ -1,6 +1,6 @@
 // import React from 'react'
 import { useEffect } from "react"
-import "./preloader.styles.scss"
+import "./Preloader.styles.scss"
 import { preLoaderAnim } from "../../animations"
 
 
