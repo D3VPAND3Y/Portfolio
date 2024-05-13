@@ -1,60 +1,41 @@
-import Candy from "../../assets/Candy.png";
 import Ecommerce from "../../assets/Ecommerce.png";
-import Hover from "../../assets/Hover.png";
-import Meals2Go from "../../assets/Meals2Go.png";
-import Monster from "../../assets/Nasa-APOD.png";
-import Starbucks from "../../assets/Starbucks.png";
-import Thrift from "../../assets/Thrift.png";
-import TicTacToe from "../../assets/TicTacToe.png";
-import Pf from "../../assets/VectorFigma.png";
+import Paytm from "../../assets/Paytm.png";
+import Social from "../../assets/Social.png";
+import Blog from "../../assets/Blog Website.png"
 
 
-
-export const products = [
+export const projects = [
   {
     id: 1,
-    img: TicTacToe,
-    link: "https://d3vpand3y.github.io/Tic-Tac-Toe/",
+    img: Social,
+    name: "Social Media",
+    description: "A simple social media website",
+    tech: "ReactJs TailwindCSS",
+    link: "https://social-d3vpand3y.netlify.app/",
   },
   {
     id: 2,
     img: Ecommerce,
-    link: "",
+    name: "Ecommerce",
+    description: "Ecommerce Website built using ReactJs having features like cart, wishlist,login,signup and payment gateway integrated through stripe",
+    tech: "ReactJs SCSS Stripe Firebase",
+    link: "https://shoppers-website.netlify.app/shop",
   },
   {
     id: 3,
-    img: Monster,
-    link: "",
+    img: Paytm,
+    name: "Paytm Application",
+    description: "A simple paytm application to transfer money between users.",
+    tech: "ReactJs MongoDB Express NodeJs TailwindCSS",
+    link: "https://github.com/D3VPAND3Y/Paytm",
   },
   {
     id: 4,
-    img: Meals2Go,
-    link: "https://www.behance.net/gallery/166343853/Food-Delivery-APP-MEALS2GO",
-  },
-  {
-    id: 5,
-    img: Thrift,
-    link: "https://www.behance.net/gallery/168235977/ReFashion-Thrift-Store-UI",
-  },
-  {
-    id: 6,
-    img: Starbucks,
-    link: "https://d3vpand3y.github.io/Starbucks/",
-  },
-  {
-    id: 7,
-    img: Hover,
-    link: "https://d3vpand3y.github.io/Mouse-Trail/",
-  },
-  {
-    id: 8,
-    img: Candy,
-    link: "https://d3vpand3y.github.io/Candy-Project/",
-  },
-  {
-    id: 9,
-    img: Pf,
-    link: "https://d3vpand3y.framer.website/",
+    img: Blog,
+    name: "Blog Website",
+    description: "A blog website which lets user to create, read, update and delete blogs.",
+    tech: "ReactJs MongoDB Express NodeJs TailwindCSS",
+    link: "https://github.com/D3VPAND3Y/Blog-Website",
   },
 ];
 

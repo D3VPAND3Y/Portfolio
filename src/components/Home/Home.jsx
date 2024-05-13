@@ -1,7 +1,7 @@
 // import { Fragment } from "react";
 import "./Home.scss"
 import TextSpan from "../TextSpan";
-import { useEffect,useState } from "react";
+import { useEffect } from "react";
 import gsap from "gsap";
 import Preloader from "../Preloader/Preloader";
 import AboutMeSection from "../../sub-components/AboutSection";

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 // import { fadeUp } from "../animations";
 import gsap from "gsap";
 import { useEffect } from "react";
@@ -19,7 +18,7 @@ const About = () => {
     });
   }, []);
 
-  
+
 
   return (
     <>

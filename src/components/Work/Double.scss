@@ -1,0 +1,119 @@
+.double{
+    display: flex;
+    margin-top: 10vh;
+    // height: 60vw;
+
+    .imageContainer{
+      &:nth-of-type(1){
+        width: 66.66%;
+      }
+      &:nth-of-type(2){
+        width: 33.33%;
+      }
+
+      .stretchyWrapper{
+        // padding-bottom: 66%;
+        // position: relative;
+
+        img{
+          object-fit: cover;
+          width: 90%;
+        }
+      }
+    }
+
+    // &:nth-child(even){
+    //   .imageContainer{
+    //     &:nth-of-type(1){
+    //       width: 33.33%;
+    //     }
+    //     &:nth-of-type(2){
+    //       width: 33.33%;
+    //     }
+    //   }
+    // }
+
+    .body{
+      font-size: 16px;
+      padding: 10px;
+      h3{
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        margin-top: 0px;
+        font-weight: 400;
+      }
+
+      p{
+        font-size: 1em;
+        margin: 0px;
+        color: rgb(187, 187, 187);
+        &:nth-of-type(2){
+          color: rgb(101, 101, 101);
+        }
+      }
+    }
+}
+
+
+
+
+@media screen and (max-width: 1080px) {
+    .double {
+        .imageContainer{
+            &:nth-of-type(1){
+              width: 100%;
+            }
+            &:nth-of-type(2){
+              width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .double {
+        // height: 80vw;
+        margin-top: 5vh;
+        .imageContainer{
+            // padding: 5px;
+            &:nth-of-type(1){
+              width: 100%;
+            }
+            &:nth-of-type(2){
+              width: 100%;
+            }
+            .stretchyWrapper{
+                img{
+                  object-fit: cover;
+                  width: 75%;
+                }
+              }
+        }
+        .body{
+            font-size: 14px;
+            padding: 5px;
+            h3{
+                font-size: 1.1em;
+            }
+            p{
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .double {
+        flex-direction: column;
+        gap: 0;
+        .imageContainer{
+            margin: 5vh 0;
+            &:nth-of-type(1){
+              width: 100%;
+            }
+            &:nth-of-type(2){
+              width: 100%;
+            }
+        }
+    }
+}

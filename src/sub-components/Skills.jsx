@@ -3,13 +3,11 @@
 // import TagCloud from 'react-tag-cloud';
 import "./Skills.scss";
 
-import { TagCloud } from "@frank-mayer/react-tag-cloud";
 //import randomColor from 'randomcolor';
 import Dev1 from "../assets/Dev-1.jpeg";
 
 const Skills = () => {
 
-  const sentence = "About Me".split("");
         return(
           <>
           <div className="a">

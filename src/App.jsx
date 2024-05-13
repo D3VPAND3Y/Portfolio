@@ -10,9 +10,6 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Work from "./components/Work/Project";
 
-// import React,{useEffect} from "react";
-
-
 
 const App = () => {
 

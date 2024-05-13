@@ -18,9 +18,9 @@ const Mouse = () => {
       );
     });
 
-    return () => {
-      document.removeEventListener("mousemove", cursorList);
-    };
+    // return () => {
+    //   document.removeEventListener("mousemove", cursorList);
+    // };
   }, []);
       return (
         <div className="Mouse" >
