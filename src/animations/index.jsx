@@ -48,20 +48,13 @@ export const preLoaderAnim = () => {
         duration: 1.5,
         height: "0vh",
         ease: "Power3.easeOut",
-        onComplete: mobileLanding(),
+        onComplete: () => {
+          mobileLanding();
+          sessionStorage.setItem('preloaderShown', 'true');
+        },
       },
       "-=2"
-    )
-    .from(".links .item", {
-      duration: 0.5,
-      opacity: 0,
-      delay: window.innerWidth < 763 ? -3 : -0.6,
-      // y: 80,
-      stagger: {
-        amount: 0.5,
-      },
-      ease: "expo.easeOut",
-    })
+    );
 };
 
 export const openMenu = () => {

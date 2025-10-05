@@ -1,8 +1,43 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { gsap } from "gsap";
 import Dev1 from "../assets/Dev.png";
 import "./styled.scss"
 
 const AboutSection = () => {
+  useEffect(() => {
+    const hasShownPreloader = sessionStorage.getItem('preloaderShown');
+    const baseDelay = hasShownPreloader ? 1.0 : 3.8; 
+    console.log("Preloader shown before:", hasShownPreloader);
+    console.log("Base delay:", baseDelay);
+    // Animate title
+    gsap.from(".about-section__container__text__title", {
+      y: 80,
+      opacity: 0,
+      duration: 1,
+      delay: baseDelay,
+      ease: "easeInOut",
+    });
+    
+    // Animate description paragraphs with stagger
+    gsap.from(".about-section__container__text__description", {
+      y: 60,
+      opacity: 0,
+      duration: 0.8,
+      delay: baseDelay + 0.3,
+      stagger: 0.2,
+      ease: "easeInOut",
+    });
+    
+    // Animate image
+    gsap.from(".about-section__container__image", {
+      scale: 0.8,
+      opacity: 0,
+      duration: 1,
+      delay: baseDelay + 0.6,
+      ease: "easeInOut",
+    });
+  }, []);
+
   return (
 
     <div className="about-section">
@@ -21,9 +56,7 @@ const AboutSection = () => {
       My abundant energy fuels me in the pursuit of many interests, hobbies, areas of study and artistic endeavors. I'm a fast learner, able to pick up new skills and juggle different projects and roles with relative ease.
     </p>
     </div>
-    {/* <div className="about-section__container__image"> */}
     <img className='about-section__container__image' src={Dev1} alt="Dev-Pandey" border="0" />
-    {/* </div> */}
     <div></div>
     </div>
     </div>

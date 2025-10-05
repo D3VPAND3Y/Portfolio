@@ -3,10 +3,14 @@ import "./Home.scss"
 import TextSpan from "../TextSpan";
 import { useEffect } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Preloader from "../Preloader/Preloader";
 import AboutMeSection from "../../sub-components/AboutSection";
 
 import { Link, NavLink } from "react-router-dom";
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 
 const Home = () => {
@@ -16,12 +20,100 @@ const Home = () => {
     }, []);
 
     useEffect(() => {
+        const hasShownPreloader = sessionStorage.getItem('preloaderShown');
+        const baseDelay = hasShownPreloader ? 0.8 : 3.6; 
+        
+        // Main text containers (hero titles)
         gsap.from(".text-container", {
             y: 100,
             opacity: 0,
             duration: 1,
-            delay: 1.2,
+            delay: baseDelay + 0.2,
             ease: "easeInOut",
+        });
+        
+        // Subtitle appears after titles
+        gsap.from(".sub", {
+            y: 50,
+            opacity: 0,
+            duration: 0.8,
+            delay: baseDelay,
+            ease: "easeInOut",
+        });
+        
+        // Navigation links appear last
+        gsap.from(".links .item", {
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+            delay: baseDelay + 0.4,
+            stagger: 0.2,
+            ease: "easeInOut",
+        });
+
+        // Find Me section
+        gsap.from(".find-me .title", {
+            y: 80,
+            opacity: 0,
+            duration: 1,
+            ease: "easeInOut",
+            scrollTrigger: {
+                trigger: ".find-me",
+                start: "top 80%",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.from(".find-me .topic", {
+            y: 60,
+            opacity: 0,
+            duration: 0.8,
+            // delay: 0.2,
+            ease: "easeInOut",
+            scrollTrigger: {
+                trigger: ".find-me",
+                start: "top 80%",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.from(".social-boxes .box", {
+            y: 60,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "easeInOut",
+            scrollTrigger: {
+                trigger: ".social-boxes",
+                start: "top 80%",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        // Contact section
+        gsap.from(".contact .topic", {
+            y: 60,
+            opacity: 0,
+            duration: 0.8,
+            ease: "easeInOut",
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 80%",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.from(".contact .title", {
+            y: 60,
+            opacity: 0,
+            duration: 1,
+            // delay: 0.2,
+            ease: "easeInOut",
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 80%",
+                toggleActions: "play none none reverse"
+            }
         });
     }, []);
 
@@ -52,9 +144,6 @@ const Home = () => {
         })}
         </div>
         </div>
-        {/* <div className="image-container">
-        <img className="image" src={Dev1} alt="Dev-Pandey" border="0" />
-        </div> */}
         </section>
         <div className="links">
             <span className="item">
