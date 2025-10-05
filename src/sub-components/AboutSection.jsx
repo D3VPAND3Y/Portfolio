@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react'
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Dev1 from "../assets/Dev.png";
 import "./styled.scss"
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 const AboutSection = () => {
   useEffect(() => {
@@ -9,6 +13,7 @@ const AboutSection = () => {
     const baseDelay = hasShownPreloader ? 1.0 : 3.8; 
     console.log("Preloader shown before:", hasShownPreloader);
     console.log("Base delay:", baseDelay);
+    
     // Animate title
     gsap.from(".about-section__container__text__title", {
       y: 80,
@@ -35,6 +40,21 @@ const AboutSection = () => {
       duration: 1,
       delay: baseDelay + 0.6,
       ease: "easeInOut",
+    });
+
+    gsap.to(".about-section", {
+      opacity: 0,
+      y: -40,
+      duration: 1,
+      ease: "easeInOut",
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ".about-section",
+        start: "bottom 50%",
+        end: "bottom 20%",
+        scrub: true,
+        toggleActions: "play none none reverse"
+      }
     });
   }, []);
 
